@@ -19,7 +19,7 @@ body, html {
     font-size: small;
 }
 
-.narrow {    
+.narrow {
     width: 340px;
 }
 
@@ -77,7 +77,7 @@ body, html {
 
 /* Main title CSS */
 #main-title h1 {
-    text-align: center;    
+    text-align: center;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 32px;
     font-weight: 300;
@@ -93,7 +93,7 @@ body, html {
 }
 
 .caption {
-    text-align: center;    
+    text-align: center;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 18px;
     font-weight: 300;
@@ -113,7 +113,7 @@ body, html {
 
 #start:hover {
     background-color: #682566;
-    color: #fff;    
+    color: #fff;
 }
 
 #save:hover {
@@ -136,8 +136,8 @@ body, html {
 	color: #7c674e;
 	opacity: 0.3;
     font: 60px "Open Sans";
-    
-    
+
+
     position: absolute;
     bottom: 15px;
     left: 0;
@@ -159,6 +159,10 @@ body, html {
     background: rgba(0,0,0,0.2);
     color: #fff;
     font-family: "Open Sans", arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
 }
 
 #color-detail p {
@@ -170,7 +174,7 @@ body, html {
    height: 25px;
    position: relative;
     margin: auto;
-  
+
   -webkit-transform: rotate(45deg);
   cursor: pointer;
 }
@@ -200,7 +204,7 @@ body, html {
 #action-bar {
     border-radius: 6px;
     display: none;
-    
+
     position: absolute;
     top: 10px;
     right: 10px;
@@ -235,7 +239,7 @@ body, html {
 #color-save-box, #color-load-box {
     background: #F2F2F2;
     padding-bottom: 1%;
-     
+
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -243,7 +247,7 @@ body, html {
     right: 0;
     top: 10%;
     z-index: 100;
-    
+
     display: none;
 }
 
@@ -270,7 +274,7 @@ body, html {
     font-weight: 300;
     font-size: 1.75em;
     font-family: "Lato", sans-serif;
-    
+
     outline: none;
 
     -webkit-transition: background-color 0.2s ease-out;
@@ -292,7 +296,7 @@ body, html {
     .palette p {
         font-size: small;
     }
-    
+
     #color-code {
         font-size: 50px;
     }
