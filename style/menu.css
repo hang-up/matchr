@@ -1,0 +1,17 @@
+/* line 6, scss/menu.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 10, scss/menu.scss */
+body {
+  background: #d3d3d3;
+}
+
+/* line 14, scss/menu.scss */
+#click-menu {
+  background: red;
+  height: 43px;
+  width: 200px;
+  display: none;
+}

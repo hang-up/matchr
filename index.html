@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matchr</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|News+Cycle|Lato:300' rel='stylesheet' type='text/css'>
+    <link href="style/fontello.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="script/transition.js"></script>
+    
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body id="home">
+    <div class="center-box" id="main-title">
+        <h1>Matchr</h1>
+        <img src="main-icon.png" id="main-icon">
+        
+        <p class="caption">Matching colors made easy.</p>
+        <br>
+        <p class="caption small">Move the mouse around. Scroll up or down to change the hue. <br> Double click to save.</p>
+        <br>
+        <button class="button-start" id="start">Got it !</button>
+    </div>
+    
+    
+<!--    Utils-->
+    <div id="action-bar">
+        <ul>
+            <li><div class="utils-icon">Load</div></li>
+            <li><div class="utils-icon">Save</div></li>
+        </ul>        
+    </div>
+    
+    
+    <div class="center-box narrow" id="color-save-box">
+        <h1>Save</h1>        
+        <p>
+            <label>Name</label>
+            <input type="text" name="color-save-name" required>
+        </p>
+        <button class="button" id="save">Done!</button>
+        <button class="button" id="cancel">Cancel</button>
+    </div>
+    
+    <div class="center-box narrow" id="color-load-box">
+        <h1>Load</h1>
+        <ul>            
+        </ul>
+        
+        <button class="button" id="cancel">Close</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
