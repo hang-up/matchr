@@ -6,6 +6,10 @@ It is beforehand the first personal project I have ever created to help me learn
 It is built on a basic HTML5, CSS3, Javascrip, jQuery stack.  
 (A massive recoding will be due soon, introducing the use of React)
 
+### DEMO
+Live version here:
+http://hang-up.github.io/Projects/Matchr/index.html
+
 ### TODOS
 * Include React
 * Follow SMCSS approach
