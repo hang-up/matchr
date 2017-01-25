@@ -15,20 +15,26 @@
 </template>
 
 <script>
+    require('colorcolor')
+
     export default {
         data() {
             return {
-                x: 0,
-                y: 0
+                hue: 0,
+                sat: 0,
+                light: 0,
+                width: window.innerWidth
             }
         },
 
         created(){
             window.addEventListener("mousemove", this.getCoordinates)
+            window.addEventListener("wheel", this.getScroll)
         },
 
         destroyed() {
             window.removeEventListener("mousemove", this.getCoordinates)
+            window.addEventListener("wheel", this.getScroll)
         },
 
         methods: {
@@ -38,16 +44,40 @@
              * @param e
              */
             getCoordinates(e) {
-
                 // Vue dev tools won't update those values on the fly. Test it with console.log and it works.
-                this.x = e.clientX
-                this.y = e.clientY
+                this.hue = Math.floor( e.clientX / (this.width / 361))
+                this.sat = Math.floor( e.clientY/ (this.width / 101))
+
+            },
+
+            getScroll(e) {
+
+                // Increase the light if we scroll up
+                if (e.deltaY < 0) {
+                    if (this.light >= 100)
+                        this.light = 100
+                    else
+                        this.light++
+                } else {
+                    if (this.light <= 0)
+                        this.light = 0
+                    else
+                        this.light--
+                }
+
+                console.log(this.light)
             },
 
             addColor() {
+
+                // Transform our coordinates into meaningful color
+                let colorString = `hsla(${this.hue}, ${this.sat}%, ${this.light}%, 1)`
+                let color = colorcolor(colorString, "hex")
+
+
                 this.$store.commit({
                     type: 'addColor',
-                    color: '#333'
+                    color: color
                 })
             }
         }
