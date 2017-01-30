@@ -16,17 +16,21 @@
                 :sat="sat"
                 :light="light"
         ></identifier>
+
+        <palette v-for="color in colors"></palette>
     </div>
 </template>
 
 <script>
     const identifier = require('./identifier.vue')
+    const palette = require('./palette.vue')
 
     require('colorcolor')
 
     export default {
         components: {
-            identifier
+            identifier,
+            palette
         },
 
         data() {
@@ -42,6 +46,10 @@
             backgroundColor() {
                 let colorString = `hsla(${this.hue}, ${this.sat}%, ${this.light}%, 1)`
                  return 'background: ' + colorcolor(colorString, "hex")
+            },
+
+            colors() {
+                return this.$store.state.colors
             }
         },
 
