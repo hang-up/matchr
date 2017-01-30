@@ -5,18 +5,30 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 0;
     }
 </style>
 
 <template>
     <div id="canvas" v-on:dblclick="addColor" :style="backgroundColor">
+        <identifier
+                :hue="hue"
+                :sat="sat"
+                :light="light"
+        ></identifier>
     </div>
 </template>
 
 <script>
+    const identifier = require('./identifier.vue')
+
     require('colorcolor')
 
     export default {
+        components: {
+            identifier
+        },
+
         data() {
             return {
                 hue: Math.floor(Math.random() * 100),

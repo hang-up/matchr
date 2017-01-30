@@ -12,11 +12,11 @@
                                         <img src="../assets/logo.png">
 
                                         <h1 class="title is-1">
-                                            Matchr
+                                            matchr
                                         </h1>
 
                                         <h3 class="subtitle">
-                                            Matching colors made easy.
+                                            matching colors made easy
                                         </h3>
                                         <p>Move the mouse around. Scroll up or down to change the hue. <br> Double click to
                                             save.
