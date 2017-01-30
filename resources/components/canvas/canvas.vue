@@ -5,12 +5,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: black;
     }
 </style>
 
 <template>
-    <div id="canvas" v-on:dblclick="addColor">
+    <div id="canvas" v-on:dblclick="addColor" :style="backgroundColor">
     </div>
 </template>
 
@@ -20,10 +19,17 @@
     export default {
         data() {
             return {
-                hue: 0,
-                sat: 0,
-                light: 0,
-                width: window.innerWidth
+                hue: Math.floor(Math.random() * 100),
+                sat: Math.floor(Math.random() * 50),
+                light: Math.floor(Math.random() * (80 - 50) + 50),
+                width: window.innerWidth,
+            }
+        },
+
+        computed: {
+            backgroundColor() {
+                let colorString = `hsla(${this.hue}, ${this.sat}%, ${this.light}%, 1)`
+                 return 'background: ' + colorcolor(colorString, "hex")
             }
         },
 
