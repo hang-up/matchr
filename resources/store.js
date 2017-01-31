@@ -9,7 +9,7 @@ const store = new Vuex.Store({
     },
 
     mutations: {
-        dismissSplash(state) {
+        toggleSplash(state) {
             state.showSplash = !state.showSplash
         },
 

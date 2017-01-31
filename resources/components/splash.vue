@@ -56,7 +56,7 @@
 
         methods: {
             dimiss() {
-                this.$store.commit('dismissSplash')
+                this.$store.commit('toggleSplash')
                 this.show = !this.show
             }
         }

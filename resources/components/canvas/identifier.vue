@@ -15,7 +15,7 @@
             style="color: rgba(39, 39, 39, 0.7); display: inline-block;"
         >{{ backgroundColor }}</h3>
 
-        <a class="button is-white is-pulled-right">help?</a>
+        <a class="button is-white is-pulled-right" @click="showSplash">help?</a>
     </div>
 </template>
 <script type="text/babel">
@@ -28,5 +28,11 @@
                 return 'background: ' + colorcolor(colorString, "hex")
             }
         },
+
+        methods: {
+            showSplash() {
+                this.$store.commit('toggleSplash')
+            }
+        }
     }
 </script>
