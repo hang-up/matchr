@@ -9,7 +9,5 @@ Vue.use(Vuex)
 new Vue({
     el: '#app',
     store,
-    components: {
-        app
-    }
+    render: h => h(app)
 })

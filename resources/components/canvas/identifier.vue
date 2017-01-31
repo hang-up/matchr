@@ -25,7 +25,7 @@
         computed: {
             backgroundColor() {
                 let colorString = `hsla(${this.hue}, ${this.sat}%, ${this.light}%, 1)`
-                return 'background: ' + colorcolor(colorString, "hex")
+                return colorcolor(colorString, "hex")
             }
         },
 

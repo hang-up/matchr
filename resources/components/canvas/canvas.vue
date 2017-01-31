@@ -17,7 +17,9 @@
                 :light="light"
         ></identifier>
 
-        <palette v-for="color in colors"></palette>
+        <div class="columns is-marginless">
+            <palette v-for="color in colors" :color="color"></palette>
+        </div>
     </div>
 </template>
 
