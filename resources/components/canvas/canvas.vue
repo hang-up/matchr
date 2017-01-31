@@ -21,6 +21,7 @@
             <palette v-for="color in colors" :color="color"></palette>
         </div>
     </div>
+
 </template>
 
 <script>
@@ -92,8 +93,6 @@
                     else
                         this.light--
                 }
-
-                console.log(this.light)
             },
 
             addColor() {

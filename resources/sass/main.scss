@@ -15,3 +15,13 @@ body {
   transform: translateY(-10px);
   opacity: 0;
 }
+
+.is-vertically-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
