@@ -8,7 +8,7 @@
                         <div class="tile is-ancestor">
                             <div class="tile is-child has-text-centered">
                                 <transition appear name="slide-fade" mode="out-in">
-                                    <div class="content" v-if="show">
+                                    <div class="content" v-if="$store.state.showSplash" id="splash">
                                         <img src="../assets/logo.png">
 
                                         <h1 class="title is-1">
@@ -28,7 +28,7 @@
                                     </div>
 
 
-                                    <matchr-canvas v-if="!show"></matchr-canvas>
+                                    <matchr-canvas v-if="!$store.state.showSplash"></matchr-canvas>
                                 </transition>
 
                             </div>
@@ -48,16 +48,9 @@
             matchrCanvas
         },
 
-        data() {
-            return {
-                show: this.$store.state.showSplash
-            }
-        },
-
         methods: {
             dimiss() {
                 this.$store.commit('toggleSplash')
-                this.show = !this.show
             }
         }
     }
