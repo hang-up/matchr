@@ -2,6 +2,11 @@
 
 > Matchr is an experimental user friendly color picker.
 
+Built using [vue](https://vuejs.org), [vuex](vuex.vuejs.org), [vue-router](router.vuejs.org)
+
+## Demo
+Find a live version here:  http://hang-up.github.io/Projects/Matchr/index.html
+
 ## Build Setup
 
 ``` bash
