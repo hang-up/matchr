@@ -31,14 +31,8 @@
             }
         },
 
-        beforeDestroy() {
-            this.animateClass = 'fadeOut'
-        },
-
         methods: {
             deleteColor() {
-                console.log('hello')
-
                 this.$store.commit({
                     type: 'deleteColor',
                     color: this.color
