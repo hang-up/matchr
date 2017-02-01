@@ -6,12 +6,28 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
         showSplash: true,
+        showShare: false,
         colors: []
+    },
+
+    getters: {
+        shareLink: state => {
+            let res = ""
+            _.each(state.colors, (c) => {
+                res += c
+            })
+
+            return res
+        }
     },
 
     mutations: {
         toggleSplash(state) {
             state.showSplash = !state.showSplash
+        },
+
+        toggleShare(state) {
+            state.showShare = !state.showShare
         },
 
         addColor(state, payload) {
