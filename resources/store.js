@@ -12,7 +12,8 @@ const store = new Vuex.Store({
 
     getters: {
         shareLink: state => {
-            let res = ""
+            // Obviously we need to change this to a real domain...
+            let res = "localhost:8080/#/"
             _.each(state.colors, (c) => {
                 res += c
             })
