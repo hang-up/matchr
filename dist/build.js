@@ -26857,8 +26857,8 @@ var store = new _vuex2.default.Store({
 
     getters: {
         shareLink: function shareLink(state) {
-            // Obviously we need to change this to a real domain...
-            var res = "localhost:8080/#/";
+            // Obviously we need to change this to a another domain...
+            var res = "http://hang-up.github.io/Projects/Matchr/index.html#/";
             _.each(state.colors, function (c) {
                 res += c;
             });
