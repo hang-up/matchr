@@ -1,27 +1,23 @@
-# Matchr
+# matchr
 
-Matchr is an experimental user friendly color picker.  
-It is beforehand the first personal project I have ever created to help me learn the basics of webdev / webdesign.
+> Matchr is an experimental user friendly color picker.
 
-It is built on a basic HTML5, CSS3, Javascrip, jQuery stack.  
-(A massive recoding will be due soon, introducing the use of React)
+Built using [vue](https://vuejs.org), [vuex](vuex.vuejs.org), [vue-router](router.vuejs.org)
 
-### DEMO
-Live version here:
-http://hang-up.github.io/Projects/Matchr/index.html
+## Demo
+Find a live version here:  http://hang-up.github.io/Projects/Matchr/index.html
 
-### TODOS
-* Include React
-* Follow SMCSS approach
+## Build Setup
 
+``` bash
+# install dependencies
+npm install
 
-License
-----
+# serve with hot reload at localhost:8080
+npm run dev
 
-MIT
+# build for production with minification
+npm run build
+```
 
-
-Portfolio at:  [Hang-Up]!
-
-
-[Hang-Up]:http://hang-up.github.io
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
