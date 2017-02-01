@@ -9,7 +9,7 @@
                             <div class="tile is-child has-text-centered">
                                 <transition appear name="slide-fade" mode="out-in">
                                     <div class="content" v-if="$store.state.showSplash" id="splash">
-                                        <img src="../assets/logo.png">
+                                        <img src="dist/logo.png">
 
                                         <h1 class="title is-1">
                                             matchr
