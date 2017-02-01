@@ -6,12 +6,29 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     state: {
         showSplash: true,
+        showShare: false,
         colors: []
+    },
+
+    getters: {
+        shareLink: state => {
+            // Obviously we need to change this to a real domain...
+            let res = "localhost:8080/#/"
+            _.each(state.colors, (c) => {
+                res += c
+            })
+
+            return res
+        }
     },
 
     mutations: {
         toggleSplash(state) {
             state.showSplash = !state.showSplash
+        },
+
+        toggleShare(state) {
+            state.showShare = !state.showShare
         },
 
         addColor(state, payload) {
