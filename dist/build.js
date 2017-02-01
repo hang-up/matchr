@@ -29399,7 +29399,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$store.commit('toggleSplash');
         },
 
-        showShare() {
+        toggleShare() {
             this.$store.commit('toggleShare');
         }
     }
@@ -30609,14 +30609,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [(_vm.$store.state.colors.length) ? _c('a', {
     staticClass: "button is-white is-pulled-left",
     on: {
-      "click": _vm.showShare
+      "click": _vm.toggleShare
     }
   }, [_vm._v("share")]) : _vm._e()]), _vm._v(" "), _c('transition', {
     attrs: {
       "name": "slide-fade",
       "mode": "out-in"
     }
-  }, [(_vm.$store.state.showShare) ? _c('share') : _vm._e()], 1), _vm._v(" "), _c('h3', {
+  }, [(_vm.$store.state.showShare && _vm.$store.state.colors.length) ? _c('share') : _vm._e()], 1), _vm._v(" "), _c('h3', {
     staticClass: "button is-white is-disabled",
     staticStyle: {
       "color": "rgba(39, 39, 39, 0.7)",

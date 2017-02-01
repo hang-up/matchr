@@ -12,11 +12,11 @@
 <template>
     <div id="identifier">
         <transition name="slide-fade">
-            <a class="button is-white is-pulled-left" v-if="$store.state.colors.length" @click="showShare">share</a>
+            <a class="button is-white is-pulled-left" v-if="$store.state.colors.length" @click="toggleShare">share</a>
         </transition>
 
         <transition name="slide-fade" mode="out-in">
-            <share v-if="$store.state.showShare"></share>
+            <share v-if="$store.state.showShare && $store.state.colors.length"></share>
         </transition>
 
         <h3 class="button is-white is-disabled"
@@ -46,7 +46,7 @@
                 this.$store.commit('toggleSplash')
             },
 
-            showShare() {
+            toggleShare() {
                 this.$store.commit('toggleShare')
             }
         }
