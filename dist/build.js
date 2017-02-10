@@ -26857,8 +26857,8 @@ var store = new _vuex2.default.Store({
 
     getters: {
         shareLink: function shareLink(state) {
-            // Obviously we need to change this to a another domain...
-            var res = "http://hang-up.github.io/Projects/Matchr/index.html#/";
+            // Obviously we need to change this to a relevant domain...
+            var res = "matchr.groundedrob.com#/";
             _.each(state.colors, function (c) {
                 res += c;
             });
@@ -30119,7 +30119,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "\n#share {\n    position: fixed;\n    top: 0;\n    left: 70px;\n    width: 100%;\n    padding: 0.5rem 0.5rem 0.2rem 0.5rem;\n    background: #fff;\n    z-index: 99999;\n}\n", ""]);
+exports.push([module.i, "\n#share {\n    position: fixed;\n    top: 0;\n    left: 70px;\n    width: calc(90% - 70px);\n    padding: 0.5rem 0.5rem 0.2rem 0.5rem;\n    background: #fff;\n    z-index: 99999;\n}\n", ""]);
 
 // exports
 

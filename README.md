@@ -5,7 +5,7 @@
 Built using [vue](https://vuejs.org), [vuex](vuex.vuejs.org), [vue-router](router.vuejs.org)
 
 ## Demo
-Find a live version here:  http://hang-up.github.io/Projects/Matchr/index.html
+Find a live version here:  [matchr.groundedrob.com](matchr.groundedrob.com)
 
 ## Build Setup
 

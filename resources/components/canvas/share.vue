@@ -3,7 +3,7 @@
         position: fixed;
         top: 0;
         left: 70px;
-        width: 100%;
+        width: calc(90% - 70px);
         padding: 0.5rem 0.5rem 0.2rem 0.5rem;
         background: #fff;
         z-index: 99999;
