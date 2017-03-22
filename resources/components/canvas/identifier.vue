@@ -12,7 +12,7 @@
 <template>
     <div id="identifier">
         <transition name="slide-fade">
-            <a class="button is-white is-pulled-left" v-if="$store.state.colors.length" @click="toggleShare">share</a>
+            <a class="button is-white is-pulled-left" v-if="$store.state.colors.length" @click="toggleShare">{{ shareText }}</a>
         </transition>
 
         <transition name="slide-fade" mode="out-in">
@@ -29,6 +29,12 @@
 <script type="text/babel">
     export default {
         props: ['hue', 'sat', 'light'],
+
+        data() {
+            return {
+                shareText: "share"
+            }
+        },
 
         components: {
             share: require('./share.vue')
@@ -47,6 +53,7 @@
             },
 
             toggleShare() {
+                this.shareText === "share" ? this.shareText = "close" : this.shareText = "share"
                 this.$store.commit('toggleShare')
             }
         }

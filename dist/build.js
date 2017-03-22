@@ -29383,6 +29383,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = {
     props: ['hue', 'sat', 'light'],
 
+    data() {
+        return {
+            shareText: "share"
+        };
+    },
+
     components: {
         share: __webpack_require__(27)
     },
@@ -29400,6 +29406,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
 
         toggleShare() {
+            this.shareText === "share" ? this.shareText = "close" : this.shareText = "share";
             this.$store.commit('toggleShare');
         }
     }
@@ -30611,7 +30618,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.toggleShare
     }
-  }, [_vm._v("share")]) : _vm._e()]), _vm._v(" "), _c('transition', {
+  }, [_vm._v(_vm._s(_vm.shareText))]) : _vm._e()]), _vm._v(" "), _c('transition', {
     attrs: {
       "name": "slide-fade",
       "mode": "out-in"
