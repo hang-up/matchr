@@ -1,6 +1,7 @@
-# matchr
-
-> Matchr is an experimental user friendly color picker.
+# matchr 
+ Matchr is an experimental user friendly color picker.  
+ 
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/5d6c8382-05e9-463d-9597-8e6a5221aa5c/deploy-status)](https://app.netlify.com/sites/tender-lalande-2b0800/deploys)
 
 Built using [vue](https://vuejs.org), [vuex](https://vuex.vuejs.org), [vue-router](https://router.vuejs.org)
 
